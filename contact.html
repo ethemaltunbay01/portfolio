@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Ethem</title>
+    <!-- resetten van browsers -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts css-->
+    <link rel="stylesheet" href="css/font.css" />
+  </head>
+
+  <body class="donker">
+    <nav class="navbar navbar-expand-md sticky-top helder">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./assets/images/logo.png"
+            alt="Logo"
+            width="150"
+            height="150"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav w-100 d-flex mb-2 mb-lg-0 justify-content-evenly text-success fw-bold fs-5"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projecten
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 4</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 5</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 6</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-center mb-4">
+      <section id="contact" class="container py-5 border-top"></section>
+      <h1 class="display-3 fw-bold tekstkleur mb-4">Contacteer me!</h1>
+      <p class="lead tekstkleur mb-0 fs-4">
+        Voor vragen, opmerkingen en samenwerkingen kan u het onderstaande
+        formulier invullen.<br />Velden met een <span>*</span> zijn verplicht.
+      </p>
+    </header>
+
+    <main>
+      <section
+        class="contact-form mx-auto border rounded-4 p-4 p-md-5 shadow-sm"
+      >
+        <form action="#" method="post" novalidate>
+          <section class="row g-4">
+            <article class="col-12 col-md-6">
+              <label for="voornaam" class="form-label tekstkleur"
+                >Voornaam <span>*</span></label
+              >
+              <input type="text" class="form-control" id="Voornaam" required />
+            </article>
+
+            <article class="col-12 col-md-6">
+              <label for="achternaam" class="form-label tekstkleur"
+                >Achternaam <span>*</span></label
+              >
+              <input
+                type="text"
+                id="achternaam"
+                class="form-control"
+                required
+              />
+            </article>
+
+            <article class="col-12 col-md-6">
+              <label for="email" class="form-label tekstkleur"
+                >E-mail <span>*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="jij@voorbeeld.be"
+                required
+              />
+            </article>
+
+            <article class="col-12 col-md-6">
+              <label for="geboortedatum" class="form-label tekstkleur"
+                >Geboortedatum</label
+              >
+              <input type="date" id="geboortedatum" class="form-control" />
+            </article>
+
+            <article class="col-12">
+              <label for="bericht" class="form-label tekstkleur"
+                >Bericht <span>*</span></label
+              >
+              <textarea
+                id="bericht"
+                rows="6"
+                class="form-control"
+                placeholder="Schrijf hier je bericht…"
+                required
+              ></textarea>
+            </article>
+            <article class="col-12 text-end">
+              <button type="submit" class="btn btn-success px-4">
+                Versturen
+              </button>
+            </article>
+          </section>
+        </form>
+      </section>
+    </main>
+    <br />
+    <footer class="container-fluid py-5 border-top text-center">
+      <h2 class="h4 mb-3 tekstkleur">Let's connect!</h2>
+      <p class="tekstkleur mb-4">
+        Ik sta altijd open voor een gesprek over nieuwe projecten, creatieve
+        ideeën of kansen om deel uit te maken van jouw visie.
+      </p>
+
+      <section class="d-flex justify-content-center gap-4 mb-4">
+        <a href="mailto:ethem@outlook.com" class="tekstkleur fs-5">
+          <i class="bi bi-envelope-fill"></i>
+          ethem.altunbay21@outlook.com
+        </a>
+        <a href="tel:+32465725791" class="tekstkleur fs-5">
+          <i class="bi bi-telephone-fill fs-5"></i>
+          +32 465 72 57 91
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ethem-altunbay/"
+          target="_blank"
+          rel="noopener"
+          class="tekstkleur fs-5"
+        >
+          <i class="bi bi-linkedin"></i>
+          LinkedIn
+        </a>
+      </section>
+      <p class="tekstkleur small mb-0">
+        © 2025 Ethem A. Alle rechten voorbehouden.
+      </p>
+    </footer>
+  </body>
+</html>

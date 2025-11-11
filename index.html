@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shop</title>
+    <title>Portfolio Ethem</title>
     <!-- resetten van browsers -->
     <link rel="stylesheet" href="css/reset.css" />
     <!-- Bootstrap CSS -->
@@ -56,11 +56,13 @@
             class="navbar-nav w-100 d-flex mb-2 mb-lg-0 justify-content-evenly text-success fw-bold fs-5"
           >
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href=""
-                >Wie ben ik?</a
+              <a class="nav-link" aria-current="page" href="portfolio.html"
+                >Portfolio</a
               >
             </li>
             <li class="nav-item dropdown">
@@ -77,11 +79,21 @@
                 <li>
                   <a class="dropdown-item" href="project.html">Project 1</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Project 2</a></li>
-                <li><a class="dropdown-item" href="#">Project 3</a></li>
-                <li><a class="dropdown-item" href="#">Project 4</a></li>
-                <li><a class="dropdown-item" href="#">Project 5</a></li>
-                <li><a class="dropdown-item" href="#">Project 6</a></li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 4</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 5</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 6</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -124,17 +136,15 @@
     <main class="container-fluid px-5 py-5">
       <section id="intro" class="container py-5 border-top">
         <h2 class="tekstkleur text-center mb-5">Aangenaam kennis te maken</h2>
-        <section
-          class="row g-0 align-items-start flex-md-row flex-column-reverse"
-        >
-          <figure class="col-12 col-md-5 m-0 text-center">
+        <section class="row g-0 align-items-start">
+          <figure class="col-12 col-md-5 m-0 text-center order-2 order-md-1">
             <img
               src="assets/images/kennismaking.png"
               alt="Portret van Ethem"
               class="img-fluid w-100 h-100 object-fit-cover"
             />
           </figure>
-          <article class="col-12 col-md-6 m-0 p-0 ps-md-5">
+          <article class="col-12 col-md-6 m-0 p-0 ps-md-5 order-3 order-md-2">
             <p class="lead tekstkleur">
               Ik ben een gemotiveerde student Systeem- en Netwerkbeheer met een
               passie voor het oplossen van complexe technische vraagstukken en
@@ -148,59 +158,69 @@
               stabiele IT-omgevingen.
             </p>
           </article>
-          <section id="ervaring" class="container py-5 border-top">
-            <h2 class="tekstkleur text-center mb-5">Opleidingen</h2>
-            <section class="row g-4 align-items-stretch mb-4">
-              <article class="col-12 col-md-6">
-                <section class="p-4 border rounded-3 h-100">
-                  <h3 class="h5 mb-1 tekstkleur">
-                    Graduaat Systeem- & Netwerkbeheer
-                  </h3>
-                  <p class="lead mb-1 tekstkleur">
-                    AP Hogeschool Antwerpen — 2024–heden
-                  </p>
-                  <p class="mb-0 tekstkleur">
-                    Netwerken, Windows Server, Linux, virtualisatie, security
-                    fundamentals.
-                  </p>
-                </section>
-              </article>
-              <aside class="col-12 col-md-6"></aside>
-            </section>
+        </section>
 
-            <section class="row g-4 align-items-stretch mb-4">
+        <section id="ervaring" class="container py-5 border-top">
+          <h2 class="tekstkleur text-center mb-5">Opleidingen</h2>
+
+          <section class="row g-4 align-items-stretch mb-4">
+            <article class="col-12 col-md-6">
+              <section class="p-4 border rounded-3 h-100">
+                <h3 class="h5 mb-1 tekstkleur">
+                  Graduaat Systeem- & Netwerkbeheer
+                </h3>
+                <p class="lead mb-1 tekstkleur">
+                  AP Hogeschool Antwerpen — 2024–heden
+                </p>
+                <p class="mb-0 tekstkleur">
+                  Netwerken, Windows Server, Linux, virtualisatie, security
+                  fundamentals.
+                </p>
+              </section>
+            </article>
+            <aside class="col-12 col-md-6"></aside>
+          </section>
+
+          <section class="row g-4 align-items-stretch mb-4">
+            <article class="col-12 col-md-6">
+              <section class="p-4 border rounded-3 h-100">
+                <h3 class="h5 mb-1 tekstkleur">
+                  Industriële wetenschappen: elektronica-ICT
+                </h3>
+                <p class="lead mb-1 tekstkleur">VUB — 2023–2024</p>
+                <p class="mb-0 tekstkleur">
+                  Algebra, Statica, Python, C++, Assembly, VHDL.
+                </p>
+              </section>
+            </article>
+
+            <section class="row g-4 align-items-stretch">
               <article class="col-12 col-md-6">
                 <section class="p-4 border rounded-3 h-100">
                   <h3 class="h5 mb-1 tekstkleur">
                     Industriële wetenschappen: elektronica-ICT
                   </h3>
-                  <p class="lead mb-1 tekstkleur">VUB — 2023–2024</p>
-                  <p class="mb-0 tekstkleur">
-                    Routing & switching, basis scripting, troubleshooting en
-                    monitoring.
+                  <p class="lead mb-1 tekstkleur">
+                    Universiteit Antwerpen — 2019-2023
                   </p>
-                </section>
-              </article>
-
-              <blockquote class="col-12 col-md-6 my-0 ps-md-5">
-                <p class="fs-5 fst-italic mb-1 tekstkleur">
-                  “Opleiding vormt de basis, werkervaring maakt het verschil.”
-                </p>
-                <footer class="blockquote-footer mt-1">Ethem</footer>
-              </blockquote>
-            </section>
-
-            <section class="row g-4 align-items-stretch">
-              <article class="col-12 col-md-6">
-                <section class="p-4 border rounded-3 h-100">
-                  <h3 class="h5 mb-1 tekstkleur">Universiteit Antwerpen</h3>
-                  <p class="lead mb-1 tekstkleur">2019-2023</p>
                   <p class="mb-0 tekstkleur">
-                    SIEM-intro, hardening, back-ups, identity & access basics.
+                    Java, Netwerkbeheer, Linux, Azure.
                   </p>
                 </section>
               </article>
               <aside class="col-12 col-md-6"></aside>
+            </section>
+
+            <section class="row">
+              <blockquote
+                class="col-12 col-md-6 offset-md-6 order-2 order-md-1 ps-md-5"
+              >
+                <p class="fs-5 fst-italic mb-1 tekstkleur">
+                  “Onderwijs is het fundament, wijsheid is het kompas dat je
+                  koers bepaalt.”
+                </p>
+                <footer class="blockquote-footer tekstkleur mt-1">Ethem</footer>
+              </blockquote>
             </section>
           </section>
         </section>
@@ -208,27 +228,32 @@
     </main>
 
     <footer class="container-fluid py-5 border-top text-center">
-      <h2 class="h4 mb-3">Let's connect!</h2>
-      <p class="mb-4">
+      <h2 class="h4 mb-3 tekstkleur">Let's connect!</h2>
+      <p class="tekstkleur mb-4">
         Ik sta altijd open voor een gesprek over nieuwe projecten, creatieve
         ideeën of kansen om deel uit te maken van jouw visie.
       </p>
 
-      <!-- Contacticoontjes -->
       <section class="d-flex justify-content-center gap-4 mb-4">
-        <a href="mailto:ethem@example.com" class="text-dark fs-3">
+        <a href="mailto:ethem@outlook.com" class="tekstkleur fs-5">
           <i class="bi bi-envelope-fill"></i>
+          ethem.altunbay21@outlook.com
         </a>
-        <a href="#" class="text-dark fs-3">
-          <i class="bi bi-person-fill"></i>
+        <a href="tel:+32465725791" class="tekstkleur fs-5">
+          <i class="bi bi-telephone-fill fs-5"></i>
+          +32 465 72 57 91
         </a>
-        <a href="#" class="text-dark fs-3">
+        <a
+          href="https://www.linkedin.com/in/ethem-altunbay/"
+          target="_blank"
+          rel="noopener"
+          class="tekstkleur fs-5"
+        >
           <i class="bi bi-linkedin"></i>
+          LinkedIn
         </a>
       </section>
-
-      <!-- Onderaan eventueel nog kleine tekst -->
-      <p class="text-muted small mb-0">
+      <p class="tekstkleur small mb-0">
         © 2025 Ethem A. Alle rechten voorbehouden.
       </p>
     </footer>
