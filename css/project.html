@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Ethem</title>
+    <!-- resetten van browsers -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts css-->
+    <link rel="stylesheet" href="css/font.css" />
+  </head>
+
+  <body class="donker">
+    <nav class="navbar navbar-expand-md sticky-top helder">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./assets/images/logo.png"
+            alt="Logo"
+            width="150"
+            height="150"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav w-100 d-flex mb-2 mb-lg-0 justify-content-evenly text-success fw-bold fs-5"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projecten
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 3</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 4</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 5</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="project.html">Project 6</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section class="row g-4">
+        <article class="col-12">
+          <figure class="position-relative m-0">
+            <img
+              src="assets/images/afbeelding_configuratie.jpg"
+              alt="Afbeelding van het project"
+              class="project-hero img-fluid w-100"
+            />
+          </figure>
+        </article>
+
+        <header class="col-12 text-center">
+          <h1 class="display-6 fw-bold tekstkleur mb-0">Projectnaam</h1>
+        </header>
+      </section>
+
+      <section class="my-4">
+        <h2 class="h5 tekstkleur text-center mb-3">Gebruikte tools</h2>
+
+        <nav class="border-top border-bottom py-3">
+          <ul
+            class="list-unstyled d-flex justify-content-center align-items-center gap-4 mb-0"
+          >
+            <li>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener"
+                class="tekstkleur fs-3"
+                aria-label="GitHub"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.microsoft.com/windows"
+                target="_blank"
+                rel="noopener"
+                class="tekstkleur fs-3"
+                aria-label="Windows"
+              >
+                <i class="bi bi-windows"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://ubuntu.com/"
+                target="_blank"
+                rel="noopener"
+                class="tekstkleur fs-3"
+                aria-label="Linux"
+              >
+                <i class="bi bi-ubuntu"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://getbootstrap.com/"
+                target="_blank"
+                rel="noopener"
+                class="tekstkleur fs-3"
+                aria-label="Bootstrap"
+              >
+                <i class="bi bi-bootstrap"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.docker.com/"
+                target="_blank"
+                rel="noopener"
+                class="tekstkleur fs-3"
+                aria-label="Docker"
+              >
+                <i class="bi bi-box-seam"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="row g-4 my-4">
+        <article class="col-12">
+          <section class="p-4 p-md-5 border rounded-4">
+            <h2 class="h5 tekstkleur mb-3">Over dit project</h2>
+            <p class="fs-5 tekstkleur mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              reprehenderit soluta iusto placeat. Minima illum adipisci vero
+              praesentium? Velit obcaecati quaerat impedit commodi qui omnis
+              eius explicabo quam! Quibusdam, eum.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="my-5">
+        <h2 class="h4 tekstkleur text-center mb-4">Andere projecten</h2>
+
+        <section class="row g-4">
+          <article class="col-12 col-md-6">
+            <a href="project.html" class="text-decoration-none">
+              <figure class="card rounded-4 overflow-hidden h-100 helder">
+                <img
+                  src="assets/images/afbeelding_kabels.jpg"
+                  class="card-img-top object-fit-cover"
+                  alt="Ander project 1"
+                />
+                <figcaption class="card-body">
+                  <h3 class="h5 mb-1">Project 2</h3>
+                  <p class="text-secondary mb-0 small">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde quasi neque aut? Esse ratione vitae, quae nobis animi
+                    repudiandae eveniet adipisci! Dicta tenetur doloremque animi
+                    consectetur aperiam ad sapiente ducimus!
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+
+          <article class="col-12 col-md-6">
+            <a href="project.html" class="text-decoration-none">
+              <figure class="card rounded-4 overflow-hidden h-100 helder">
+                <img
+                  src="assets/images/afbeelding_servers.jpg"
+                  class="card-img-top object-fit-cover"
+                  alt="Ander project 2"
+                />
+                <figcaption class="card-body">
+                  <h3 class="h5 mb-1">Project 3</h3>
+                  <p class="text-secondary mb-0 small">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente iste aut similique suscipit sunt autem cum esse
+                    repudiandae aspernatur eveniet, maxime pariatur dolore
+                    laborum soluta earum dolorum dolores? Libero, ad?
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer class="container-fluid py-5 border-top text-center">
+      <h2 class="h4 mb-3 tekstkleur">Let's connect!</h2>
+      <p class="tekstkleur mb-4">
+        Ik sta altijd open voor een gesprek over nieuwe projecten, creatieve
+        ideeën of kansen om deel uit te maken van jouw visie.
+      </p>
+
+      <section class="d-flex justify-content-center gap-4 mb-4">
+        <a href="mailto:ethem@outlook.com" class="tekstkleur fs-5">
+          <i class="bi bi-envelope-fill"></i>
+          ethem.altunbay21@outlook.com
+        </a>
+        <a href="tel:+32465725791" class="tekstkleur fs-5">
+          <i class="bi bi-telephone-fill fs-5"></i>
+          +32 465 72 57 91
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ethem-altunbay/"
+          target="_blank"
+          rel="noopener"
+          class="tekstkleur fs-5"
+        >
+          <i class="bi bi-linkedin"></i>
+          LinkedIn
+        </a>
+      </section>
+      <p class="tekstkleur small mb-0">
+        © 2025 Ethem A. Alle rechten voorbehouden.
+      </p>
+    </footer>
+  </body>
+</html>
