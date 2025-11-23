@@ -107,7 +107,7 @@
       <h1 class="display-3 fw-bold tekstkleur mb-4">Contacteer me!</h1>
       <p class="lead tekstkleur mb-0 fs-4">
         Voor vragen, opmerkingen en samenwerkingen kan u het onderstaande
-        formulier invullen.<br />Velden met een <span>*</span> zijn verplicht.
+        formulier invullen.
       </p>
     </header>
 
@@ -115,19 +115,24 @@
       <section
         class="contact-form mx-auto border rounded-4 p-4 p-md-5 shadow-sm"
       >
-        <form action="#" method="post" novalidate>
+        <form
+          action="#"
+          method="post"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
           <section class="row g-4">
             <article class="col-12 col-md-6">
               <label for="voornaam" class="form-label tekstkleur"
-                >Voornaam <span>*</span></label
-              >
+                >Voornaam
+              </label>
               <input type="text" class="form-control" id="Voornaam" required />
             </article>
 
             <article class="col-12 col-md-6">
               <label for="achternaam" class="form-label tekstkleur"
-                >Achternaam <span>*</span></label
-              >
+                >Achternaam
+              </label>
               <input
                 type="text"
                 id="achternaam"
@@ -136,10 +141,8 @@
               />
             </article>
 
-            <article class="col-12 col-md-6">
-              <label for="email" class="form-label tekstkleur"
-                >E-mail <span>*</span></label
-              >
+            <article class="col-12 col-md-6 mx-auto">
+              <label for="email" class="form-label tekstkleur">E-mail</label>
               <input
                 type="email"
                 id="email"
@@ -148,13 +151,6 @@
                 placeholder="jij@voorbeeld.be"
                 required
               />
-            </article>
-
-            <article class="col-12 col-md-6">
-              <label for="geboortedatum" class="form-label tekstkleur"
-                >Geboortedatum</label
-              >
-              <input type="date" id="geboortedatum" class="form-control" />
             </article>
 
             <article class="col-12">
@@ -169,6 +165,9 @@
                 required
               ></textarea>
             </article>
+            <div class="form-group">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
             <article class="col-12 text-end">
               <button type="submit" class="btn btn-success px-4">
                 Versturen
