@@ -116,11 +116,14 @@
         class="contact-form mx-auto border rounded-4 p-4 p-md-5 shadow-sm"
       >
         <form
+          name="contact"
           action="#"
           method="post"
           data-netlify="true"
           data-netlify-recaptcha="true"
         >
+          <input type="hidden" name="form-name" value="contact" />
+
           <section class="row g-4">
             <article class="col-12 col-md-6">
               <label for="voornaam" class="form-label tekstkleur"
