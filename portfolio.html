@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Ethem</title>
+    <title>Portfolio</title>
     <!-- resetten van browsers -->
     <link rel="stylesheet" href="css/reset.css" />
     <!-- Bootstrap CSS -->
@@ -20,20 +20,27 @@
     />
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+      defer
     ></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- fonts css-->
     <link rel="stylesheet" href="css/font.css" />
+    <!-- eigen js voor jouw html-bestand -->
+    <script src="js/script.js" defer></script>
   </head>
-
   <body class="donker">
     <nav class="navbar navbar-expand-md sticky-top helder">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><img
             src="./assets/images/logo.png"
             alt="Logo"
@@ -78,22 +85,30 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="project.html">Project 1</a>
+                  <a class="dropdown-item" href="project1.html">TopDesign</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="project.html">Project 2</a>
+                  <a class="dropdown-item" href="project2.html"
+                    >Automatisatie script</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="project.html">Project 3</a>
+                  <a class="dropdown-item" href="project3.html"
+                    >Exit Node Sniffing
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="project.html">Project 4</a>
+                  <a class="dropdown-item" href="project4.html"
+                    >Monitoring Maps
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="project.html">Project 5</a>
+                  <a class="dropdown-item" href="project5.html"
+                    >Packetfence NAC
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="project.html">Project 6</a>
+                  <a class="dropdown-item" href="project6.html">WebWiz </a>
                 </li>
               </ul>
             </li>
@@ -105,185 +120,216 @@
       </div>
     </nav>
 
-    <header class="text-center mb-4">
-      <section id="projecten" class="container py-5 border-top"></section>
-      <h1 class="display-3 fw-bold tekstkleur mb-4">Mijn projecten</h1>
+    <header class="container text-center py-2">
+      <h1 class="display-3 fw-bold tekstkleur mb-3">Mijn projecten</h1>
       <p class="lead tekstkleur mb-0 fs-4">
-        Hier ontdek je mijn werk, van idee tot realisatie.
+        Hier ontdek je mijn werk, van idee tot realisatie
       </p>
     </header>
 
-    <main class="container py-5">
-      <section class="row row-cols-1 row-cols-md-3 g-0 raster">
-        <!-- Project 1 -->
-        <article class="col p-4">
-          <figure class="m-0">
-            <img
-              src="assets/images/afbeelding_configuratie.jpg"
-              alt="Project 1"
-              class="img-fluid project-img"
-            />
-            <figcaption class="mt-3">
-              <h3 class="fw-bold tekstkleur fs-2 mb-2">Project 1</h3>
-              <p class="tekstkleur fs-5 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                quae fugit voluptatibus placeat, perferendis odio ex tempore
-                dolorum vel eius sapiente voluptas et error odit eligendi sequi!
-                In, eveniet recusandae!
+    <div class="container py-4">
+      <div class="row">
+        <main class="col-md-9 pe-4">
+          <section class="row row-cols-1 row-cols-md-3 g-0 raster">
+            <!-- Project TopDesign -->
+            <article class="col p-4">
+              <figure class="m-0">
+                <img
+                  src="assets/images/afbeelding_configuratie.jpg"
+                  alt="Project 1"
+                  class="img-fluid"
+                  title="TopDesign"
+                />
+                <figcaption class="mt-1 tekstkleur small">
+                  &copy; Pexels - Field Engineer
+                </figcaption>
+              </figure>
+              <h3 class="fw-bold tekstkleur fs-4 mb-2">TopDesign</h3>
+              <p class="tekstkleur fs-6 mb-3">
+                Voor TopDesign ontwierp ik een volledig nieuwe netwerkoplossing
+                voor hun nieuwbouw. Ik analyseerde de gebouwindeling, bepaalde
+                alle benodigde aansluitingen, maakte een logisch netwerkschema
+                en werkte uiteindelijk het complete netwerk uit in Cisco Packet
+                Tracer.
               </p>
-              <a href="project.html" class="btn btn-outline-success btn-sm"
+              <a href="project1.html" class="btn btn-outline-success btn-sm"
                 >Meer</a
               >
-            </figcaption>
-          </figure>
-        </article>
+            </article>
 
-        <!-- Project 2 -->
-        <article class="col p-4">
-          <figure class="m-0">
-            <img
-              src="assets/images/afbeelding_configuratie.jpg"
-              alt="Project 2"
-              class="img-fluid project-img"
-            />
-            <figcaption class="mt-3">
-              <h3 class="fw-bold tekstkleur fs-2 mb-2">Project 2</h3>
-              <p class="tekstkleur fs-5 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                inventore magnam adipisci magni quasi asperiores earum explicabo
-                aspernatur. Commodi suscipit rem sit est, consequuntur nisi!
-                Dignissimos reiciendis sint corporis error.
+            <!-- Automatisering Active Directory Configuratie -->
+            <article class="col p-4">
+              <figure class="m-0">
+                <img
+                  src="assets/images/afbeelding_projectpowershell.png"
+                  alt="Project 1"
+                  class="img-fluid"
+                  title="Powershell script"
+                />
+                <figcaption class="mt-1 tekstkleur small">
+                  &copy; ChatGPT
+                </figcaption>
+              </figure>
+              <h3 class="fw-bold tekstkleur fs-4 mb-2">Automatisatie script</h3>
+              <p class="tekstkleur fs-6 mb-3">
+                Ik ontwikkelde PowerShell-scripts die automatisch een volledige
+                Windows Server- en Active Directory-omgeving opzetten. Het
+                script configureert de server, installeert de domain controller,
+                maakt OUs, groepen, gebruikers en gedeelde mappen aan, en logt
+                alle stappen. Zo ontstaat een snelle, foutloze en
+                reproduceerbare installatie.
               </p>
-              <a href="project.html" class="btn btn-outline-success btn-sm"
+              <a href="project2.html" class="btn btn-outline-success btn-sm"
                 >Meer</a
               >
-            </figcaption>
-          </figure>
-        </article>
+            </article>
 
-        <!-- Project 3 -->
-        <article class="col p-4">
-          <figure class="m-0">
-            <img
-              src="assets/images/afbeelding_configuratie.jpg"
-              alt="Project 3"
-              class="img-fluid project-img"
-            />
-            <figcaption class="mt-3">
-              <h3 class="fw-bold tekstkleur fs-2 mb-2">Project 3</h3>
-              <p class="tekstkleur fs-5 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                ipsam quod dicta neque veritatis exercitationem nesciunt, itaque
-                nihil adipisci. Culpa, magni? Deserunt vero nisi nostrum cum
-                sequi doloribus, at voluptatum.
+            <!-- TOR Exit Node Traffic Sniffing -->
+            <article class="col p-4">
+              <figure class="m-0">
+                <img
+                  src="assets/images/afbeelding_projectTOR.png"
+                  alt="Project 1"
+                  class="img-fluid"
+                  title="Tor Exit Sniffing"
+                />
+                <figcaption class="mt-1 tekstkleur small">
+                  &copy; ChatGPT
+                </figcaption>
+              </figure>
+              <h3 class="fw-bold tekstkleur fs-4 mb-2">Exit Node Sniffing</h3>
+              <p class="tekstkleur fs-6 mb-3">
+                In dit project analyseerde ik de werking en beveiliging van het
+                Tor-netwerk. Ik onderzocht hoe anonimiteit wordt opgebouwd via
+                versleutelde routing en demonstreerde tegelijk de kwetsbaarheid
+                van onbeveiligd verkeer via een malafide exitnode. Zo toon ik
+                zowel de kracht als de risico’s van anonimiseringsnetwerken in
+                cybersecurity.
               </p>
-              <a href="project.html" class="btn btn-outline-success btn-sm"
+              <a href="project3.html" class="btn btn-outline-success btn-sm"
                 >Meer</a
               >
-            </figcaption>
-          </figure>
-        </article>
+            </article>
 
-        <!-- Project 4 -->
-        <article class="col p-4">
-          <figure class="m-0">
-            <img
-              src="assets/images/afbeelding_configuratie.jpg"
-              alt="Project 4"
-              class="img-fluid project-img"
-            />
-            <figcaption class="mt-3">
-              <h3 class="fw-bold tekstkleur fs-2 mb-2">Project 4</h3>
-              <p class="tekstkleur fs-5 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                veniam quaerat eos soluta! Expedita ducimus voluptatibus
-                veritatis minima, doloremque totam eos nam perferendis enim
-                labore adipisci mollitia hic pariatur magnam?
+            <!-- Zabbix Monitoring Maps -->
+            <article class="col p-4">
+              <figure class="m-0">
+                <img
+                  src="assets/images/afbeelding_projecctZabbix.png"
+                  alt="Project 1"
+                  class="img-fluid"
+                  title="Monitoring Maps"
+                />
+                <figcaption class="mt-1 tekstkleur small">
+                  &copy; ChatGPT
+                </figcaption>
+              </figure>
+              <h3 class="fw-bold tekstkleur fs-4 mb-2">Monitoring Maps</h3>
+              <p class="tekstkleur fs-6 mb-3">
+                In dit project bouwde ik een visuele monitoringsomgeving in
+                Zabbix met twee netwerk-maps (LAN & SNB) die automatisch de
+                status van hosts en verbindingen tonen. Daarnaast maakte ik een
+                overzichtelijk dashboard met o.a. netwerkstatus, verkeer op de
+                firewall en actuele problemen. Zo ontstaat een duidelijke en
+                efficiënte manier om het netwerk snel te bewaken.
               </p>
-              <a href="project.html" class="btn btn-outline-success btn-sm"
+              <a href="project4.html" class="btn btn-outline-success btn-sm"
                 >Meer</a
               >
-            </figcaption>
-          </figure>
-        </article>
+            </article>
 
-        <!-- Project 5 -->
-        <article class="col p-4">
-          <figure class="m-0">
-            <img
-              src="assets/images/afbeelding_configuratie.jpg"
-              alt="Project 5"
-              class="img-fluid project-img"
-            />
-            <figcaption class="mt-3">
-              <h3 class="fw-bold tekstkleur fs-2 mb-2">Project 5</h3>
-              <p class="tekstkleur fs-5 mb-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas, vero? Voluptate ex assumenda, cum atque magni omnis
-                alias corrupti aliquid repellendus perspiciatis praesentium
-                nemo, architecto corporis quod. Magnam, error incidunt.
+            <!-- Packetfence NAC -->
+            <article class="col p-4">
+              <figure class="m-0">
+                <img
+                  src="assets/images/afbeelding_projectPacketfence.png"
+                  alt="Project 1"
+                  class="img-fluid"
+                  title="Packetfence NAC"
+                />
+                <figcaption class="mt-1 tekstkleur small">
+                  &copy; ChatGPT
+                </figcaption>
+              </figure>
+              <h3 class="fw-bold tekstkleur fs-4 mb-2">Packetfence NAC</h3>
+              <p class="tekstkleur fs-6 mb-3">
+                Voor OZCS Vorselaar werkte ik aan het ontwerp van een centrale
+                PacketFence NAC-omgeving voor één volledige scholengroep. Het
+                doel was om scholen veilig te verbinden via VLAN-segmentatie,
+                Intune-device management en certificaatgebaseerde netwerktoegang
+                (EAP-TLS).
               </p>
-              <a href="project.html" class="btn btn-outline-success btn-sm"
+              <a href="project5.html" class="btn btn-outline-success btn-sm"
                 >Meer</a
               >
-            </figcaption>
-          </figure>
-        </article>
+            </article>
 
-        <!-- Project 6 -->
-        <article class="col p-4">
-          <figure class="m-0">
-            <img
-              src="assets/images/afbeelding_configuratie.jpg"
-              alt="Project 6"
-              class="img-fluid project-img"
-            />
-            <figcaption class="mt-3">
-              <h3 class="fw-bold tekstkleur fs-2 mb-2">Project 6</h3>
-              <p class="tekstkleur fs-5 mb-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Accusamus sit maxime itaque. Nam, vero aliquam? Iusto minima
-                voluptas eaque vel voluptatem ipsa doloribus unde quas optio
-                aperiam alias, magnam repudiandae.
+            <!-- WebWiz -->
+            <article class="col p-4">
+              <figure class="m-0">
+                <img
+                  src="assets/images/afbeelding_kabels.jpg"
+                  alt="Project 1"
+                  class="img-fluid"
+                  title="WebWiz"
+                />
+                <figcaption class="mt-1 tekstkleur small">
+                  &copy; Pexels - Christina Morillo
+                </figcaption>
+              </figure>
+              <h3 class="fw-bold tekstkleur fs-4 mb-2">WebWiz</h3>
+              <p class="tekstkleur fs-6 mb-3">
+                Tijdens dit project ontwierp ik een volledig nieuw,
+                professioneel bekabeld netwerk voor de firma Webwiz, die in hun
+                nieuwbouw nog geen gestructureerde bekabeling had. Het bestaande
+                voorstel dat ze ontvingen leek op het eerste zicht bruikbaar,
+                maar bleek in werkelijkheid onvolledig, onpraktisch en technisch
+                onjuist.
               </p>
-              <a href="project.html" class="btn btn-outline-success btn-sm"
+              <a href="project6.html" class="btn btn-outline-success btn-sm"
                 >Meer</a
               >
-            </figcaption>
-          </figure>
-        </article>
-      </section>
-    </main>
+            </article>
+          </section>
+        </main>
 
-    <footer class="container-fluid py-5 border-top text-center">
-      <h2 class="h4 mb-3 tekstkleur">Let's connect!</h2>
-      <p class="tekstkleur mb-4">
-        Ik sta altijd open voor een gesprek over nieuwe projecten, creatieve
-        ideeën of kansen om deel uit te maken van jouw visie.
-      </p>
+        <aside class="col-md-3 border-start ps-4">
+          <h2 class="fs-5 fw-bold tekstkleur pt-3">Contact</h2>
+          <p class="tekstkleur">
+            Ethem Altunbay<br />
+            <a
+              href="mailto:ethem.altunbay21@outlook.com"
+              class="tekstkleur text-decoration-none link-primary d-block"
+            >
+              ethem.altunbay21@outlook.com
+            </a>
+            <a
+              href="tel:+32465725791"
+              class="tekstkleur d-block text-decoration-none link-primary"
+            >
+              +32 465 72 57 91
+            </a>
+          </p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a
+                href="https://www.linkedin.com/in/ethem-altunbay/"
+                target="_blank"
+                rel="noopener"
+                class="text-decoration-none"
+              >
+                <i class="bi bi-linkedin tekstkleur fs-4"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
 
-      <section class="d-flex justify-content-center gap-4 mb-4">
-        <a href="mailto:ethem@outlook.com" class="tekstkleur fs-5">
-          <i class="bi bi-envelope-fill"></i>
-          ethem.altunbay21@outlook.com
-        </a>
-        <a href="tel:+32465725791" class="tekstkleur fs-5">
-          <i class="bi bi-telephone-fill fs-5"></i>
-          +32 465 72 57 91
-        </a>
-        <a
-          href="https://www.linkedin.com/in/ethem-altunbay/"
-          target="_blank"
-          rel="noopener"
-          class="tekstkleur fs-5"
-        >
-          <i class="bi bi-linkedin"></i>
-          LinkedIn
-        </a>
-      </section>
-      <p class="tekstkleur small mb-0">
-        © 2025 Ethem A. Alle rechten voorbehouden.
-      </p>
+    <footer
+      class="container-fluid tekstkleur text-center h6 small p-4 mt-5 border-top"
+    >
+      &copy; <span id="year"></span> Ethem Altunbay
     </footer>
   </body>
 </html>
